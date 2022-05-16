@@ -1,46 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-   
-
+    <app-nav :datiNavbar="datiNavbar" />
+    <app-jumbotron/>
   </div>
 </template>
 
 <script>
-import AOS from "aos"
-import HelloWorld from './components/HelloWorld.vue'
+import dati from "./dati.json";
+import AOS from "aos";
+import AppNav from "./components/AppNav.vue";
+import AppJumbotron from "./components/AppJumbotron.vue";
 
 export default {
-  data(){
-    return{
-
-    }
-
+  data() {
+    return {
+      datiNavbar: dati.navbar,
+      datiFooter: dati.recentPosts,
+    };
   },
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    AppNav,
+    AppJumbotron,
   },
-  methods:{
-
-  },
-  mounted(){
+  methods: {},
+  mounted() {
     AOS.init();
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
 @import "./style/generals.scss";
 
-
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -1,0 +1,33 @@
+
+{
+"navbar":[
+    {
+        "name":"Home",
+        "new":false
+    },
+    {
+        "name":"Services",
+        "new":false
+    },
+    {
+        "name":"About",
+        "new":false
+    },
+    {
+        "name":"Videos",
+        "new":false
+    },
+    {
+        "name":"Blog",
+        "new":false
+    },
+    {
+        "name":"Store",
+        "new":true
+    }
+        ],
+ "recentPosts":["The best protein shake", "Ultimate cardio workout", "New juices avaible now", "Tips to find training partners", "20 best healty recipes"]
+}
+
+
+
