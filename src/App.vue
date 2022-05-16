@@ -3,6 +3,7 @@
     <app-nav :datiNavbar="datiNavbar" />
     <app-jumbotron/>
     <app-main/>
+    <app-main-2/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import AOS from "aos";
 import AppNav from "./components/AppNav.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
 import AppMain from './components/AppMain.vue';
+import AppMain2 from './components/AppMain2.vue';
 
 export default {
   data() {
@@ -25,6 +27,7 @@ export default {
     AppNav,
     AppJumbotron,
     AppMain,
+    AppMain2,
   },
   methods: {},
   mounted() {

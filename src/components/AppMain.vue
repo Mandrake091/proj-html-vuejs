@@ -3,27 +3,65 @@
     <div class="background">
       <div class="container">
         <div class="row justify-content-center">
-          <div id="img1" class="col-3 d-flex">
+          <div
+            id="img1"
+            class="col-3 d-flex"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <div class="card-text">
               <h3>Crossfit workout</h3>
               <p>Push your limits</p>
             </div>
           </div>
-          <div id="img1" class="col-3 d-flex">
+          <div
+            id="img1"
+            class="col-3 d-flex"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+          >
             <div class="card-text">
               <h3>Crossfit workout</h3>
               <p>Push your limits</p>
             </div>
           </div>
-          <div id="img1" class="col-3 d-flex">
+          <div
+            id="img1"
+            class="col-3 d-flex"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="2000"
+          >
             <div class="card-text">
               <h3>Crossfit workout</h3>
               <p>Push your limits</p>
             </div>
           </div>
         </div>
-        <div class="row">
-            <h3>"How you respond to the challenge in the second half will determine what you become after the game, whether you a winner or a loser</h3>
+        <div class="phrase row pt-4 pb-4 text-center align-items-center">
+          <h3 class="fw-bold">
+            "How you respond to the challenge in the second half will determine
+            what you become after the game, whether you a winner or a loser.""
+          </h3>
+          <p class="fs-2">
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>
+          </p>
+          <div class="text-white pb-5 mb-5">
+            <img
+              class="rounded-pill"
+              src="../assets/images/avatar-1-2x.jpg"
+              alt=""
+            />
+            <span class=" px-4 fw-bold">Brad Johnson</span>
+            <span>Las Vegas</span>
+          </div>
         </div>
       </div>
     </div>
@@ -51,10 +89,15 @@ export default {
   width: 80%;
 }
 .row {
-  row-gap: 30px;
-  column-gap: 30px;
+  column-gap: 20px;
   position: relative;
   top: -50px;
+}
+.fa-solid {
+  color: $title-color;
+}
+.phrase {
+  color: $primary-text;
 }
 .card-text {
   position: absolute;
@@ -79,7 +122,8 @@ export default {
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
 }
 img {
-  border-radius: 0 0 50px 0;
-  box-shadow: inset 10px 10px black;
+
+    height: 80px;
+
 }
 </style>
