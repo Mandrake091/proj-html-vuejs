@@ -2,7 +2,7 @@
   <main>
     <div class="background">
       <div class="container">
-        <div class="row justify-content-around justify-lg-content-between">
+        <div class="row justify-content-around justify-content-lg-between">
           <div
             id="img1"
             class="col-12 col-md-3 col-lg-4 d-flex"
@@ -85,7 +85,9 @@ export default {
   width: 100%;
   height: 100%;
 }
-
+.container {
+  width: 80%;
+}
 .row {
   column-gap: 30px;
   row-gap: 20px;
