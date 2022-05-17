@@ -2,10 +2,10 @@
   <main>
     <div class="background">
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-around justify-lg-content-between">
           <div
             id="img1"
-            class="col-4 d-flex"
+            class="col-12 col-md-3 col-lg-4 d-flex"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -18,7 +18,7 @@
           </div>
           <div
             id="img1"
-            class="col-4 d-flex"
+            class="col-12 col-md-3 col-lg-4 d-flex"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="100"
@@ -31,7 +31,7 @@
           </div>
           <div
             id="img1"
-            class="col-4 d-flex"
+            class="col-12 col-md-3 col-lg-4 d-flex"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="150"
@@ -59,7 +59,7 @@
               src="../assets/images/avatar-1-2x.jpg"
               alt=""
             />
-            <span class=" px-4 fw-bold">Brad Johnson</span>
+            <span class="px-4 fw-bold">Brad Johnson</span>
             <span>Las Vegas</span>
           </div>
         </div>
@@ -85,11 +85,10 @@ export default {
   width: 100%;
   height: 100%;
 }
-.container {
-  width: 80%;
-}
-.row {
 
+.row {
+  column-gap: 30px;
+  row-gap: 20px;
   position: relative;
   top: -50px;
 }
@@ -113,17 +112,17 @@ export default {
   }
 }
 #img1 {
-  height: 300px;
-  width:calc(100% / 3 - 20px);
+  width: 300px;
+  height: 350px;
   background-image: url("../assets/images/service6-2x.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);
   border-radius: 0 0 25px 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
 }
 img {
-
-    height: 80px;
-
+  height: 80px;
 }
 </style>

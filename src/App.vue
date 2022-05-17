@@ -8,6 +8,8 @@
     <app-main-4 />
     <app-jumbotron-2 />
     <app-main-6 />
+    <app-jumbotron-3 />
+    <app-footer />
   </div>
 </template>
 
@@ -22,6 +24,8 @@ import AppMain3 from "./components/AppMain3.vue";
 import AppMain4 from "./components/AppMain4.vue";
 import AppJumbotron2 from "./components/AppJumbotron2.vue";
 import AppMain6 from "./components/AppMain6.vue";
+import AppJumbotron3 from "./components/AppJumbotron3.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   data() {
@@ -40,7 +44,9 @@ export default {
     AppMain4,
     AppJumbotron2,
     AppMain6,
+    AppJumbotron3,
   },
+  AppFooter,
   mounted() {
     AOS.init();
   },
