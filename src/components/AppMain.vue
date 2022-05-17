@@ -2,10 +2,10 @@
   <main>
     <div class="background">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-between">
           <div
             id="img1"
-            class="col-3 d-flex"
+            class="col-4 d-flex"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -18,7 +18,7 @@
           </div>
           <div
             id="img1"
-            class="col-3 d-flex"
+            class="col-4 d-flex"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="100"
@@ -31,7 +31,7 @@
           </div>
           <div
             id="img1"
-            class="col-3 d-flex"
+            class="col-4 d-flex"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="150"
@@ -89,7 +89,7 @@ export default {
   width: 80%;
 }
 .row {
-  column-gap: 20px;
+
   position: relative;
   top: -50px;
 }
@@ -114,7 +114,7 @@ export default {
 }
 #img1 {
   height: 300px;
-  width: 275px;
+  width:calc(100% / 3 - 20px);
   background-image: url("../assets/images/service6-2x.jpg");
   background-size: cover;
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);
