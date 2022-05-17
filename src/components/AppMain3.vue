@@ -1,30 +1,43 @@
 <template>
   <div class="container-fluid p-0">
     <div class="background">
-      <div class="row m-auto align-items-center justify-content-between">
+      <div class="row m-auto align-items-center">
         <div
-          class="col-12 col-md-8 align-content-center justify-content-between"
+          class="col-12 col-md-9 h-100 my-auto m-auto d-flex flex-column justify-content-center"
         >
-          <h4>Certified fitness professional</h4>
-          <h1>Insider offers & flash sales in your inbox every week.</h1>
-          <br />
-          <i class="fa-solid fa-angle-up"></i>
-          <i class="fa-solid fa-angle-up"></i>
-          <i class="fa-solid fa-angle-up"></i>
+          <h5 class="subtitle">Join our mailing list today</h5>
+          <h1 class="text-white">
+            Inside offers & flash sales in your inbox every week.
+          </h1>
 
-          <br />
-          <div class="input-group justify-content-between">
+          <div class="text-start">
+            <i class="fa-solid fa-angle-up fs-2"></i>
+            <i class="fa-solid fa-angle-up fs-2"></i>
+            <i class="fa-solid fa-angle-up fs-2"></i>
+          </div>
+
+          <div class="row">
             <input
               type="text"
-              class="form-control rounded-pill"
-              placeholder="Insert your e-mail...*"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
+              class="form-control rounded-pill col-12 col-md-2 m-0 w-50 m-2"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default"
+              placeholder="Insert your email..*"
             />
+            <!-- <div class="input-group mb-3 col-8 col-md-2 m-0 w-25 m-0">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >Default</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div> -->
+
             <button
-              class="btn-youtube btn rounded-pill border-2 border-secondary px-5 mx-5"
-              type="button"
-              id="button-addon2"
+              class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2 w-25 "
             >
               Subscribe
             </button>
@@ -35,7 +48,7 @@
           </p>
         </div>
         <div
-          class="col-4 d-none d-md-flex h-100 d-flex justify-content-center align-items-center"
+          class="col-3 d-none d-md-flex h-100 d-flex justify-content-center align-items-center"
         ></div>
       </div>
     </div>
@@ -130,11 +143,12 @@ export default {
 @import "../style/generals.scss";
 
 .background {
+  height: 60vh;
   background-image: url(../assets/images/banner1-2x.jpg);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  box-shadow: inset 700px 0px 200px black;
+  box-shadow: inset 700px 0px 100px $bg-navbar;
 }
 .background-2 {
   background: $bg-navbar;
@@ -156,6 +170,19 @@ export default {
   &:hover.btn-buy {
     background-color: white;
     color: $bg-navbar;
+  }
+}
+.subtitle{
+  color: $icon-color;
+}
+.col-12 {
+  row-gap: 10px;
+  column-gap: 10px;
+  > p {
+    color: $text-grey;
+  }
+  .fa-angle-up {
+    color: $title-color;
   }
 }
 .row:nth-child(1) {

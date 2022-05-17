@@ -9,7 +9,7 @@
             id="img2"
             class="col-12 col-md-3"
             data-aos="fade-right"
-            data-aos-offset="0"
+            data-aos-offset="100"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
@@ -34,10 +34,10 @@
           <div
             id="img3"
             class="col-12 col-md-3"
-            data-aos="fade-right"
-            data-aos-offset="0"
+            data-aos="zoom-out-down"
+            data-aos-offset="100"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
           >
             <img class="" src="../assets/images/sponsor-2-2x.png" alt="" />
 
@@ -59,10 +59,10 @@
           <div
             id="img4"
             class="col-12 col-md-3"
-            data-aos="fade-rigth"
-            data-aos-offset="0"
+            data-aos="zoom-out-up"
+            data-aos-offset="100"
             data-aos-delay="50"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
           >
             <img class="" src="../assets/images/sponsor-3-2x.png" alt="" />
             <div class="">
@@ -84,7 +84,7 @@
             id="img4"
             class="col-12 col-md-3"
             data-aos="fade-left"
-            data-aos-offset="0"
+            data-aos-offset="100"
             data-aos-delay="50"
             data-aos-duration="1000"
           >

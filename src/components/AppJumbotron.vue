@@ -72,7 +72,7 @@ export default {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  box-shadow: inset 700px 0px 200px $bg-navbar;
+  box-shadow: inset 700px 0px 100px $bg-navbar;
 }
 .container-fluid {
   height: 100%;

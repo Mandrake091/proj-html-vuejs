@@ -21,7 +21,7 @@
             class="col-12 col-md-4"
             data-aos="fade-right"
             data-aos-offset="200"
-            data-aos-delay="50"
+            data-aos-delay="100"
             data-aos-duration="1000"
           >
             <img class="" src="../assets/images/blog4-2x.jpg" alt="" />
@@ -37,7 +37,7 @@
             class="col-12 col-md-4"
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-delay="50"
+            data-aos-delay="100"
             data-aos-duration="1000"
           >
             <img class="" src="../assets/images/blog1-2x.jpg" alt="" />
@@ -52,7 +52,7 @@
             class="col-12 col-md-4"
             data-aos="fade-rigth"
             data-aos-offset="200"
-            data-aos-delay="50"
+            data-aos-delay="100"
             data-aos-duration="1000"
           >
             <img class="" src="../assets/images/blog3-2x.jpg" alt="" />

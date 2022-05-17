@@ -2,10 +2,10 @@
   <main>
     <div class="background">
       <div class="container-fluid pb-5 mb-5">
-        <div class="row justify-content-between align-items-center mb-5 pb-5">
+        <div class="row justify-content-between align-items-center mb-5">
           <div
             id="img1"
-            class="col-6 d-flex justify-content-center align-items-center"
+            class="col-12 col-md-6 d-flex justify-content-center align-items-center"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -21,7 +21,7 @@
               <i class="fa-solid fa-play"></i>
             </div>
           </div>
-          <div class="col-6 ps-5">
+          <div class="col-12 col-md-6 ps-5">
             <h5>Tune up your workouts</h5>
             <h1>The best health & fitness advice online</h1>
             <div class="d-flex align-items-center">
@@ -119,7 +119,7 @@
             <div class="play-button rounded-circle">
               <i class="fa-solid fa-play"></i>
             </div>
-            <div class="mt-5 d-sm-none d-md-block">
+            <div class="mt-5 d-none d-sm-block">
               <h2>Slim & trim trim your waist</h2>
               <p>Shed those extra pounds</p>
             </div>
@@ -166,7 +166,7 @@ export default {
 .row {
   row-gap: 40px;
   position: relative;
-  top: -40px;
+  top: -60px;
 }
 .row:nth-child(2) {
   width: 80%;
