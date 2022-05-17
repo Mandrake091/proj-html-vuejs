@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div class="background">
-      <div class="container-fluid p-0">
+    <div class="background pb-5">
+      <div class="container-fluid p-0 pb-5 mb-5">
         <div class="row py-5 justify-content-between">
           <div class="col-4">
             <h4>Featured playlists</h4>
