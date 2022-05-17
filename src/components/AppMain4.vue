@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="background pb-5">
-      <div class="container-fluid p-0 pb-5 mb-5">
+      <div class="container-fluid pb-5 mb-5">
         <div class="row py-5 justify-content-between">
           <div class="col-4">
             <h4>Featured playlists</h4>
@@ -18,7 +18,7 @@
         >
           <div
             id="img2"
-            class="col-12 col-md-4 ps-0"
+            class="col-12 col-md-4"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -49,8 +49,8 @@
           </div>
           <div
             id="img4"
-            class="col-4 col-12 col-md-4 pe-0"
-            data-aos="fade-left"
+            class="col-12 col-md-4"
+            data-aos="fade-rigth"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"

@@ -1,15 +1,13 @@
 <template>
   <div id="app">
-    <app-nav :datiNavbar="datiNavbar" />
-    <app-jumbotron />
-    <app-main />
+    <app-nav :datiNavbar="datiNavbar" /><app-jumbotron /><app-main />
     <app-main-2 />
     <app-main-3 />
     <app-main-4 />
     <app-jumbotron-2 />
     <app-main-6 />
     <app-jumbotron-3 />
-    <app-footer />
+    <app-footer :datiFooter="datiFooter" />
   </div>
 </template>
 
@@ -45,8 +43,9 @@ export default {
     AppJumbotron2,
     AppMain6,
     AppJumbotron3,
+    AppFooter,
   },
-  AppFooter,
+
   mounted() {
     AOS.init();
   },

@@ -7,11 +7,33 @@ $fa-font-path: "@/webfonts";
 @import "@fortawesome/fontawesome-free/scss/regular.scss";
 @import "@fortawesome/fontawesome-free/scss/brands.scss";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  clear: both;
 }
-html{
-    font-size: 0.8em;
+html {
+  
+  font-size: 0.8em;
+}
+html,
+body {
+ 
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0);
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
 }

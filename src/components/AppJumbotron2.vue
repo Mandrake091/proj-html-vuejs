@@ -1,5 +1,5 @@
 <template>
-  <jumbotron>
+
     <div class="background mt-5 pt-5">
       <div class="container-fluid">
         <div class="row m-auto text-center text-white align-items-center">
@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-  </jumbotron>
+ 
 </template>
 
 <script>

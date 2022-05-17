@@ -52,7 +52,7 @@
               Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper
               mauris, venenatis leo integer sit pellentesque.
             </p>
-            <button class="btn-youtube btn rounded-pill px-5 py-2">
+            <button class="btn-youtube btn rounded-pill py-2 m-0">
               <i class="fa-brands fa-youtube"></i>
               Visit my YouTube channel
             </button>
@@ -110,7 +110,7 @@
           <div
             id="img4"
             class="col-4 col-12 col-md-4"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
@@ -189,8 +189,9 @@ export default {
 #img1 {
   position: relative;
   height: 500px;
+  background-size: cover;
   background-image: url("../assets/images/service15-2x.jpg");
-  background-size: 100%;
+  // background-size: 100%;
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);
   border-radius: 0 0 25px 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));

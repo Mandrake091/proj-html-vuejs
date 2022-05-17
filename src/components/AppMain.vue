@@ -43,11 +43,11 @@
             </div>
           </div>
         </div>
-        <div class="phrase row pt-4 pb-4 text-center align-items-center">
-          <h3 class="fw-bold">
+        <div class="phrase row pt-5 mt-5 pb-4 text-center align-items-center">
+          <h2 class="">
             "How you respond to the challenge in the second half will determine
             what you become after the game, whether you a winner or a loser.""
-          </h3>
+          </h2>
           <p class="fs-2">
             <i class="fa-solid fa-angle-up"></i>
             <i class="fa-solid fa-angle-up"></i>
@@ -59,8 +59,7 @@
               src="../assets/images/avatar-1-2x.jpg"
               alt=""
             />
-            <span class="px-4 fw-bold">Brad Johnson</span>
-            <span>Las Vegas</span>
+            <span > Brad Johnson <span class="fw-bold">Las Vegas</span></span>
           </div>
         </div>
       </div>
