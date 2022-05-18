@@ -195,6 +195,8 @@ export default {
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);
   border-radius: 0 0 25px 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
+   :hover{
+     filter: contrast(150%), brightness(110%)};
 }
 #img2 {
   height: 220px;

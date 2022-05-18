@@ -45,7 +45,11 @@ export default {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  box-shadow: inset 0px -100px 200px black;
+  box-shadow: inset 0px -200px 500px black;
+  transition: 0.5s ease-in;
+  &:hover{
+    box-shadow: inset (0px -100px 300px) black;
+  }
 }
 .container-fluid {
   height: 100%;

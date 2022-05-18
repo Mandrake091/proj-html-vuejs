@@ -137,7 +137,11 @@ export default {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  box-shadow: inset 700px 0px 100px $bg-navbar;
+  box-shadow: inset 850px 0px 150px $bg-navbar;
+  transition: 1s ease-in-out;
+  &:hover {
+    box-shadow: inset 550px 0px 150px $bg-navbar;
+  }
 }
 .background-2 {
   background: $bg-navbar;
