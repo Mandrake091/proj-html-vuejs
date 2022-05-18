@@ -131,7 +131,7 @@
 </template>
 <script>
 export default {
-  name: "AppMain2",
+  name: "AppSectionCards",
 };
 </script>
 

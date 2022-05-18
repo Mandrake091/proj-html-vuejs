@@ -5,7 +5,7 @@
         <div class="row justify-content-around justify-content-lg-between">
           <div
             id="img1"
-            class="col-12 col-md-3 col-lg-4 d-flex"
+            class="col-12 col-md-3 col-lg-4 d-flex card-image"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -17,8 +17,8 @@
             </div>
           </div>
           <div
-            id="img1"
-            class="col-12 col-md-3 col-lg-4 d-flex"
+            id="img2"
+            class="col-12 col-md-3 col-lg-4 d-flex card-image"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="100"
@@ -30,8 +30,8 @@
             </div>
           </div>
           <div
-            id="img1"
-            class="col-12 col-md-3 col-lg-4 d-flex"
+            id="img3"
+            class="col-12 col-md-3 col-lg-4 d-flex card-image"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="150"
@@ -59,7 +59,7 @@
               src="../assets/images/avatar-1-2x.jpg"
               alt=""
             />
-            <span > Brad Johnson <span class="fw-bold">Las Vegas</span></span>
+            <span> Brad Johnson <span class="fw-bold">Las Vegas</span></span>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
 </template>
 <script>
 export default {
-  name: "AppMain",
+  name: "B-AppCards+Bg",
 };
 </script>
 
@@ -112,18 +112,39 @@ export default {
     color: $title-color;
   }
 }
-#img1 {
+
+.card-image {
+  cursor: pointer;
   width: 300px;
   height: 350px;
-  background-image: url("../assets/images/service6-2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);
   border-radius: 0 0 25px 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
+  :hover {
+    transform: scale(1.05);
+  }
+
+  &#img1 {
+    background-image: url("../assets/images/service6-2x.jpg");
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
+  &#img2 {
+    background-image: url("../assets/images/box1-2x.jpg");
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
+  &#img3 {
+    background-image: url("../assets/images/box3-2x.jpg");
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
 }
-img {
-  height: 80px;
-}
+
 </style>

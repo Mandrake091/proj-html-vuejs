@@ -24,20 +24,9 @@
               aria-describedby="inputGroup-sizing-default"
               placeholder="Insert your email..*"
             />
-            <!-- <div class="input-group mb-3 col-8 col-md-2 m-0 w-25 m-0">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >Default</span
-              >
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-default"
-              />
-            </div> -->
 
             <button
-              class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2 w-25 "
+              class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2 w-25"
             >
               Subscribe
             </button>
@@ -135,7 +124,7 @@
 
 <script>
 export default {
-  name: "AppMain3",
+  name: "AppJumbotronCards",
 };
 </script>
 
@@ -172,7 +161,7 @@ export default {
     color: $bg-navbar;
   }
 }
-.subtitle{
+.subtitle {
   color: $icon-color;
 }
 .col-12 {

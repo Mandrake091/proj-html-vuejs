@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <app-nav :datiNavbar="datiNavbar" /><app-jumbotron /><app-main />
-    <app-main-2 />
-    <app-main-3 />
-    <app-main-4 />
+    <app-nav :datiNavbar="datiNavbar" />
+    <app-jumbotron />
+    <app-cards-bg />
+    <app-section-cards />
     <app-jumbotron-2 />
-    <app-main-6 />
+    <app-jumbotron-cards />
+    <app-playlist />
+
+    <app-logo-cards />
     <app-jumbotron-3 />
     <app-footer :datiFooter="datiFooter" />
   </div>
@@ -14,16 +17,16 @@
 <script>
 import dati from "./dati.json";
 import AOS from "aos";
-import AppNav from "./components/AppNav.vue";
-import AppJumbotron from "./components/AppJumbotron.vue";
-import AppMain from "./components/AppMain.vue";
-import AppMain2 from "./components/AppMain2.vue";
-import AppMain3 from "./components/AppMain3.vue";
-import AppMain4 from "./components/AppMain4.vue";
-import AppJumbotron2 from "./components/AppJumbotron2.vue";
-import AppMain6 from "./components/AppMain6.vue";
-import AppJumbotron3 from "./components/AppJumbotron3.vue";
-import AppFooter from "./components/AppFooter.vue";
+import AppNav from "./components/1-AppNav.vue";
+import AppJumbotron from "./components/2-AppJumbotron.vue";
+import AppCardsBg from "./components/3-AppCards+Bg.vue";
+import AppSectionCards from "./components/4-AppSectionCards.vue";
+import AppJumbotronCards from "./components/6-AppJumbotronCards.vue";
+import AppPlaylist from "./components/7-AppPlaylist.vue";
+import AppJumbotron2 from "./components/5-AppJumbotron2.vue";
+import AppLogoCards from "./components/8-AppLogoCards.vue";
+import AppJumbotron3 from "./components/9-AppJumbotron3.vue";
+import AppFooter from "./components/10-AppFooter.vue";
 
 export default {
   data() {
@@ -36,16 +39,15 @@ export default {
   components: {
     AppNav,
     AppJumbotron,
-    AppMain,
-    AppMain2,
-    AppMain3,
-    AppMain4,
+    AppCardsBg,
+    AppSectionCards,
+    AppJumbotronCards,
+    AppPlaylist,
     AppJumbotron2,
-    AppMain6,
+    AppLogoCards,
     AppJumbotron3,
     AppFooter,
   },
-
   mounted() {
     AOS.init();
   },

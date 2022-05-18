@@ -12,17 +12,38 @@
         />
       </div>
       <div class="col-12 col-md-6 d-md-block d-none">
-        <ul class="m-0 p-0 text-center">
-          <li v-for="el in datiNavbar" :key="el.name" class="px-2">
-            <p class="m-0">
+        <div class="dropdown">
+          <div class="dropdown-buttons d-flex justify-content-between flex-wrap">
+            <button
+              class="btn btn-dark bg-dark dropdown-toggle"
+              @click="menuVisible = !menuVisible"
+              :class="{ show: menuVisible }"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              :aria-expanded="true"
+              v-for="el in datiNavbar"
+              :key="el.name"
+            >
               {{ el.name }}
               <span class="news" v-if="el.new">New</span>
-            </p>
-          </li>
-        </ul>
+            </button>
+          </div>
+          <ul
+            class="dropdown-menu bg-dark"
+            aria-labelledby="dropdownMenuButton1"
+            @click="menuVisible = !menuVisible"
+            :class="{ show: menuVisible }"
+          >
+            <li v-for="el in datiNavbar" :key="el.name">
+              <a class="dropdown-item text-white" href="#"> {{ el.name }}</a>
+              
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-12 d-md-block d-none col-md-2">
-        <button class="btn rounded-pill fw-bold">Schedule a workout</button>
+      <div class="col-12 d-md-block d-none col-md-2 text-center m-0">
+        <button class="btn rounded-pill fw-bold ">Schedule a workout</button>
       </div>
       <div class="col-1 d-md-flex d-none justify-content-end text-end">
         <i class="fa-solid fa-cart-shopping pe-2"></i>
@@ -69,7 +90,6 @@
               <li v-for="el in datiNavbar" :key="el.name" class="px-2">
                 <p class="m-0 fs-5">
                   {{ el.name }}
-                  <span class="news" v-if="el.new">New</span>
                 </p>
               </li>
             </ul>
@@ -96,7 +116,7 @@
 
 <script>
 export default {
-  name: "AppHeader",
+  name: "1-AppNav",
   data() {
     return {
       menuVisible: false,
@@ -123,6 +143,10 @@ export default {
   max-width: 200px;
   width: 100%;
 }
+.dropdown-buttons{
+  row-gap: 5px;
+  column-gap: 5px;
+}
 .inner-navbar {
   width: 80%;
   height: 100%;
@@ -137,6 +161,9 @@ export default {
   background: $button-color;
 }
 .news {
+  padding: 0 5px;
+  font-weight: bold;
+  border-radius: 5px;
   background: yellow;
   color: black;
 }

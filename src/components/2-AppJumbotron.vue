@@ -31,7 +31,9 @@
           </p>
 
           <div class="text-center">
-            <button class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2">
+            <button
+              class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2"
+            >
               <i class="fa-brands fa-youtube"></i>
               Visit my YouTube channel
             </button>
@@ -120,10 +122,12 @@ export default {
   height: 30px;
 }
 .info {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.53));
+  z-index: 9999;
   width: 60px;
   height: 150px;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 80px;
   right: 20px;
 }
 .on-sale {

@@ -68,7 +68,7 @@
 </template>
 <script>
 export default {
-  name: "AppMain4",
+  name: "AppPlaylist",
 };
 </script>
 
