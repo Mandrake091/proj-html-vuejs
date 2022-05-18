@@ -90,6 +90,7 @@
               <li v-for="el in datiNavbar" :key="el.name" class="px-2">
                 <p class="m-0 fs-5">
                   {{ el.name }}
+                   <span class="news" v-if="el.new">New</span>
                 </p>
               </li>
             </ul>

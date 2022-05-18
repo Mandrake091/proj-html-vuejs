@@ -80,7 +80,9 @@
             dolor sit amet.
           </p>
 
-          <div class="text-start d-flex justify-content-between flex-column flex-md-row align-items-center">
+          <div
+            class="text-start d-flex justify-content-between flex-column flex-md-row align-items-center"
+          >
             <button
               class="col-7 col-lg-6 btn-youtube btn rounded-pill m-2 p-3 mx-0"
             >
@@ -122,7 +124,7 @@ export default {
   background-color: $bg-navbar;
   background-image: url(../assets/images/slider82x-scaled.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: right;
   background-repeat: no-repeat;
   box-shadow: inset 600px 0px 100px $bg-navbar;
   transition: 1s ease-in-out;
@@ -143,7 +145,7 @@ export default {
   > p {
     color: $text-grey;
   }
-  >h1{
+  > h1 {
     font-size: 4em;
   }
   .fa-angle-up {

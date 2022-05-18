@@ -6,7 +6,7 @@
             <div class="play-button rounded-circle m-auto">
               <i class="fa-solid fa-play"></i>
             </div>
-            <h1>Crossfit workout of the day</h1>
+            <h1>Crossfit workout of the day.</h1>
             <h4>November 15th, 2019</h4>
             <p>View all videos <i class="fa-solid fa-arrow-right-long"></i></p>
             <br />
@@ -43,6 +43,12 @@ export default {
   &:hover{
     filter: brightness(120%);
   }
+}
+h1{
+  font-size: 4em;
+}
+h4{
+  color: $title-color;
 }
 .container-fluid {
   height: 100%;

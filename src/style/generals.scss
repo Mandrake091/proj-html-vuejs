@@ -14,12 +14,10 @@ $fa-font-path: "@/webfonts";
   clear: both;
 }
 html {
-  
   font-size: 0.8em;
 }
 html,
 body {
- 
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -36,4 +34,11 @@ body::-webkit-scrollbar-thumb {
 .scrollbar-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
+}
+
+//Media query
+@media screen and (max-width: 768px) {
+  div > .background{
+    box-shadow: inset 5px 0px 250px $bg-navbar !important;
+  }
 }

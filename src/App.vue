@@ -5,9 +5,9 @@
     <app-cards-bg />
     <app-section-cards />
     <app-jumbotron-2 />
-    <app-jumbotron-cards />
     <app-playlist />
-
+    <app-jumbotron-cards />
+    
     <app-logo-cards />
     <app-jumbotron-3 />
     <app-footer :datiFooter="datiFooter" />
