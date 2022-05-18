@@ -54,7 +54,7 @@
           data-aos-id="super-duper"
         >
           <div class="card-text">
-            <div class="pt-2">
+            <div>
               <h3>CONTACT INFORMATIONS</h3>
               <P>4765 Tipple Road Michigan 48392</P>
               <p>Mobile: 1.800.000.0000</p>
