@@ -1,11 +1,25 @@
 <template>
   <div class="background mt-0">
     <div class="info text-center fw-bold d-none d-md-block">
-      <div class="demos bg-white p-2 mb-2">
+      <div
+        class="demos bg-white p-2 mb-2"
+        data-aos="zoom-in-left"
+        data-aos-duration="1000"
+        data-aos-offset="0"
+        data-aos-delay="500"
+        data-aos-id="super-duper"
+      >
         <i class="fa-solid fa-cubes"></i>
         <p class="m-0">Demos</p>
       </div>
-      <div class="on-sale bg-white p-2">
+      <div
+        class="on-sale bg-white p-2"
+        data-aos="zoom-in-left"
+        data-aos-duration="1000"
+        data-aos-offset="0"
+        data-aos-delay="500"
+        data-aos-id="super-duper"
+      >
         <span class="">$</span>
         <span class="fw-bold fs-3">39</span>
         <p class="p-on-sale m-0">On Sale</p>
@@ -16,29 +30,65 @@
         <div
           class="col-12 col-md-8 h-100 my-auto m-auto d-flex flex-column justify-content-center"
         >
-          <h5 class="subtitle">Certified fitness professional</h5>
-          <h1 class="text-white">Take control of your healt</h1>
+          <h5
+            class="subtitle"
+            data-aos="flip-down"
+            data-aos-duration="500"
+            data-aos-offset="0"
+            data-aos-delay="1000"
+            data-aos-id="super-duper"
+          >
+            Certified fitness professional
+          </h5>
+          <h1
+            class="text-white"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            data-aos-delay="1500"
+          >
+            Take control of your healt
+          </h1>
 
           <div class="text-start">
-            <i class="fa-solid fa-angle-up fs-2"></i>
-            <i class="fa-solid fa-angle-up fs-2"></i>
-            <i class="fa-solid fa-angle-up fs-2"></i>
+            <i
+              class="fa-solid fa-angle-up fs-2"
+              data-aos="slide-right"
+              data-aos-duration="500"
+              data-aos-offset="0"
+              data-aos-delay="1700"
+            ></i>
+            <i
+              class="fa-solid fa-angle-up fs-2"
+              data-aos="slide-right"
+              data-aos-duration="500"
+              data-aos-offset="0"
+              data-aos-delay="1800"
+            ></i>
+            <i
+              class="fa-solid fa-angle-up fs-2"
+              data-aos="slide-right"
+              data-aos-duration="500"
+              data-aos-offset="0"
+              data-aos-delay="1900"
+              data-aos-id="super-duper"
+            ></i>
           </div>
 
-          <p>
+          <p class="fs-4">
             Curabitur non nulla sit amet nisl tempus convallis quis ac lectur
             dolor sit amet.
           </p>
 
-          <div class="text-center">
+          <div class="text-start d-flex justify-content-between flex-column flex-md-row align-items-center">
             <button
-              class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2"
+              class="col-7 col-lg-6 btn-youtube btn rounded-pill m-2 p-3 mx-0"
             >
               <i class="fa-brands fa-youtube"></i>
               Visit my YouTube channel
             </button>
             <button
-              class="col-10 col-md-4 btn-buy btn rounded-pill m-2 border-2 border-secondary p-2"
+              class="col-5 col-lg-4 btn-buy btn rounded-pill m-2 border-2 border-secondary p-3 mx-0"
             >
               Buy Avada today
               <i class="fa-solid fa-arrow-right"></i>
@@ -74,7 +124,11 @@ export default {
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
-  box-shadow: inset 700px 0px 100px $bg-navbar;
+  box-shadow: inset 600px 0px 100px $bg-navbar;
+  transition: 1s ease-in-out;
+  &:hover {
+    box-shadow: inset 550px 0px 150px $bg-navbar;
+  }
 }
 .container-fluid {
   height: 100%;
@@ -88,6 +142,9 @@ export default {
   column-gap: 10px;
   > p {
     color: $text-grey;
+  }
+  >h1{
+    font-size: 4em;
   }
   .fa-angle-up {
     color: $title-color;

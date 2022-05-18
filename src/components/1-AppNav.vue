@@ -15,7 +15,7 @@
         <div class="dropdown">
           <div class="dropdown-buttons d-flex justify-content-between flex-wrap">
             <button
-              class="btn btn-dark bg-dark dropdown-toggle"
+              class="btn btn-dark bg-dark dropdown-toggle py-0"
               @click="menuVisible = !menuVisible"
               :class="{ show: menuVisible }"
               type="button"

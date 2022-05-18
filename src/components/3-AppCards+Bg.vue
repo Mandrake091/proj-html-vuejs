@@ -44,10 +44,17 @@
           </div>
         </div>
         <div class="phrase row pt-5 mt-5 pb-4 text-center align-items-center">
-          <h2 class="">
-            "How you respond to the challenge in the second half will determine
-            what you become after the game, whether you a winner or a loser.""
-          </h2>
+          <h1
+            data-aos="slide-up"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            data-aos-delay="500"
+            data-aos-id="super-duper"
+          >
+            "How you respond to the challenge <br />
+            in the second half will determine what you become after the game,<br />
+            whether you a winner or a loser."
+          </h1>
           <p class="fs-2">
             <i class="fa-solid fa-angle-up"></i>
             <i class="fa-solid fa-angle-up"></i>
@@ -97,6 +104,10 @@ export default {
   color: $title-color;
 }
 .phrase {
+  > h1 {
+    font-weight: 100;
+    font-size: 3em;
+  }
   color: $primary-text;
 }
 .card-text {
@@ -146,5 +157,4 @@ export default {
     }
   }
 }
-
 </style>

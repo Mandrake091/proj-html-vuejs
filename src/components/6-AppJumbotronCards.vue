@@ -3,7 +3,7 @@
     <div class="background">
       <div class="row m-auto align-items-center">
         <div
-          class="col-12 col-md-9 h-100 my-auto m-auto d-flex flex-column justify-content-center"
+          class="col-12 col-md-9 h-100 d-flex flex-column justify-content-center"
         >
           <h5 class="subtitle">Join our mailing list today</h5>
           <h1 class="text-white">
@@ -16,51 +16,51 @@
             <i class="fa-solid fa-angle-up fs-2"></i>
           </div>
 
-          <div class="row">
+          <div class="row aling-items-center justify-content-center">
             <input
               type="text"
-              class="form-control rounded-pill col-12 col-md-2 m-0 w-50 m-2"
+              class="form-control rounded-pill col-12 col-lg-4 m-0 p-3 m-2 w-50"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default"
               placeholder="Insert your email..*"
             />
 
-            <button
-              class="col-10 col-md-7 btn-youtube btn rounded-pill m-2 p-2 w-25"
-            >
+            <button class="col-6 col-lg-2 btn-youtube btn rounded-pill m-2 p-3">
               Subscribe
             </button>
           </div>
-          <p>
+          <p class="fs-4">
             Curabitur non nulla sit amet nisl tempus convallis quis ac lectur
             dolor sit amet.
           </p>
         </div>
         <div
           class="col-3 d-none d-md-flex h-100 d-flex justify-content-center align-items-center"
-        ></div>
+        >
+        </div>
       </div>
     </div>
 
     <div class="background-2 py-5">
-      <div class="row justify-content-between pt-5 pb-5">
+      <div class="row justify-content-center justify-content-lg-between pt-5 pb-5"
+      >
         <div
-          class="col-12 col-md-4 d-flex flex-column text-center border border-primary text-white p-5"
-          data-aos="zoom-in-up"
+          class="training-card col-12 col-md-4 d-flex flex-column text-center text-white py-5"
+          data-aos="flip-left"
           data-aos-duration="500"
           data-aos-offset="0"
           data-aos-delay="250"
           data-aos-id="super-duper"
         >
-          <i class="fa-solid fa-stopwatch-20 fs-1"></i>
+          <i class="fa-solid fa-stopwatch-20"></i>
 
           <div class="card-text">
             <div class="pt-2">
-              <h4>Team training</h4>
-              <h5>Find a partner</h5>
+              <h2>Team training</h2>
+              <h3>Find a partner</h3>
             </div>
 
-            <p class="pt-3">
+            <p class="pt-3 fs-5 pb-5">
               Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing.
               Nisl sit rames amet senectus eget sed duis vehicula. Tristique
             </p>
@@ -70,21 +70,21 @@
           </div>
         </div>
         <div
-          class="col-12 col-md-4 d-flex flex-column text-center border border-primary text-white p-5"
-          data-aos="zoom-in-up"
+          class="training-card col-12 col-md-4 d-flex flex-column text-center text-white py-5"
+          data-aos="flip-left"
           data-aos-duration="500"
           data-aos-offset="0"
           data-aos-delay="500"
           data-aos-id="super-duper"
         >
-          <i class="fa-solid fa-weight-hanging fs-1"></i>
+          <i class="fa-solid fa-weight-hanging"></i>
           <div class="card-text">
             <div class="pt-2">
-              <h4>Team training</h4>
-              <h5>Find a partner</h5>
+              <h2>Team training</h2>
+              <h3>Find a partner</h3>
             </div>
 
-            <p class="pt-3">
+            <p class="pt-3 fs-5 pb-5">
               Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing.
               Nisl sit rames amet senectus eget sed duis vehicula. Tristique
             </p>
@@ -94,21 +94,21 @@
           </div>
         </div>
         <div
-          class="col-12 col-md-4 d-flex flex-column text-center border border-primary text-white p-5"
-          data-aos="zoom-in-up"
+          class="training-card col-12 col-md-4 d-flex flex-column text-center text-white py-5"
+          data-aos="flip-left"
           data-aos-duration="500"
           data-aos-offset="0"
-          data-aos-delay="750"
+          data-aos-delay="500"
           data-aos-id="super-duper"
         >
-          <i class="fa-solid fa-dumbbell fs-1"></i>
+          <i class="fa-solid fa-dumbbell"></i>
           <div class="card-text">
             <div class="pt-2">
-              <h4>Team training</h4>
-              <h5>Find a partner</h5>
+              <h2>Team training</h2>
+              <h3>Find a partner</h3>
             </div>
 
-            <p class="pt-3">
+            <p class="pt-3 fs-5 pb-5">
               Vestibulum, curabitur eu sem nibh ultrices sit nulla adipiscing.
               Nisl sit rames amet senectus eget sed duis vehicula. Tristique
             </p>
@@ -132,7 +132,7 @@ export default {
 @import "../style/generals.scss";
 
 .background {
-  height: 60vh;
+  height: 70vh;
   background-image: url(../assets/images/banner1-2x.jpg);
   background-size: cover;
   background-position: top right;
@@ -160,10 +160,9 @@ export default {
     background-color: $icon-color;
     color: $primary-text;
   }
-  &:hover.btn-buy {
-    background-color: white;
-    color: $bg-navbar;
-  }
+}
+div > .fa-solid {
+  font-size: 4em;
 }
 .subtitle {
   color: $icon-color;
@@ -183,14 +182,30 @@ export default {
   width: 80%;
   margin: 0 auto;
   row-gap: 30px;
+  column-gap: 20px;
 }
-.row:nth-child(2) {
-  width: 80%;
-  background-color: $bg-navbar;
+.row:nth-child(0) {
+  width: 100%;
 }
-.background-2 .col-md-4 {
+
+.col-md-4 {
+  cursor: pointer;
+  width: 300px;
+  height: 400px;
+  border: 3px solid $button-color;
+  border-radius: 5px;
+  transition: 0.5s ease;
 }
-h5 {
+.training-card:hover {
+  transform: scale(1.08);
+}
+h3 {
   color: $title-color;
+}
+h1 {
+  font-size: 4em;
+}
+p {
+  color: $text-grey;
 }
 </style>

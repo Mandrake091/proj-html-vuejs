@@ -1,32 +1,37 @@
 <template>
-
-    <div class="background mt-5 pt-5">
-      <div class="container-fluid">
-        <div class="row m-auto text-center text-white align-items-center">
-          <div class="col-12 col-md-12">
-            <h4>Certified fitness professional</h4>
-            <h1>Take control of your healt</h1>
-            <br />
-            <div class="arrow fs-2">
-              <i class="fa-solid fa-angle-up"></i>
-              <i class="fa-solid fa-angle-up"></i>
-              <i class="fa-solid fa-angle-up"></i>
-            </div>
-
-            <p>
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectur
-              dolor sit amet.
-            </p>
-            <br />
-            <button class="btn-youtube btn rounded-pill px-5 py-2 m-0 fw-bold">
-             Buy Avada today
-             <i class="fa-solid fa-angle-right ms-2"></i>
-            </button>
+  <div class="background mt-5 pt-5">
+    <div class="container-fluid">
+      <div class="row m-auto text-center text-white align-items-center">
+        <div class="col-12 col-md-12">
+          <h1
+            data-aos="zoom-out-up"
+            data-aos-offset="200"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            >
+            "I've failed over and over again in my life. And that is why i succeed."
+          </h1>
+          <br />
+          <div class="arrow fs-2">
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>
           </div>
+
+          <p class="fs-4
+          ">
+            Curabitur non nulla sit amet nisl tempus convallis quis ac lectur
+            dolor sit amet.
+          </p>
+          <br />
+          <button class="btn-youtube btn rounded-pill p-3 px-4 m-0 fw-bold">
+            Buy Avada today
+            <i class="fa-solid fa-angle-right ms-2"></i>
+          </button>
         </div>
       </div>
     </div>
- 
+  </div>
 </template>
 
 <script>
@@ -47,9 +52,16 @@ export default {
   background-repeat: no-repeat;
   box-shadow: inset 0px -200px 500px black;
   transition: 0.5s ease-in;
-  &:hover{
+  &:hover {
     box-shadow: inset (0px -100px 300px) black;
   }
+}
+h1{
+  font-size: 3em;
+}
+p{
+  color: $text-grey;
+
 }
 .container-fluid {
   height: 100%;
@@ -68,41 +80,11 @@ export default {
     background-color: $icon-color;
     color: $primary-text;
   }
-  &:hover.btn-buy {
-    background-color: white;
-    color: $bg-navbar;
-  }
 }
 .arrow {
   color: $title-color;
 }
-.play-button {
-  line-height: 60px;
-  width: 60px;
-  height: 60px;
-  background-color: $primary-text;
-  color: $button-color;
-}
-.info {
-  width: 60px;
-  height: 150px;
-  position: absolute;
-  top: 50px;
-  right: 20px;
-}
-.on-sale {
-  color: $price;
-}
-.p-on-sale {
-  font-weight: bold;
-  color: $info-icon;
-}
-.demos {
-  color: $info-icon;
-}
-.info > div {
-  border-radius: 5px;
-}
+
 .row {
   height: 100%;
   width: 80%;

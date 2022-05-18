@@ -48,11 +48,17 @@
                 </strong>
               </div>
             </div>
-            <p>
+            <p class="fs-4">
               Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper
               mauris, venenatis leo integer sit pellentesque.
             </p>
-            <button class="btn-youtube btn rounded-pill py-2 m-0">
+            <button
+              class="btn-youtube btn rounded-pill m-0 p-3 px-4"
+              data-aos="zoom-in-left"
+              data-aos-offset="200"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <i class="fa-brands fa-youtube"></i>
               Visit my YouTube channel
             </button>
@@ -73,8 +79,8 @@
           class="row justify-content-between align-items-center text-center mb-5 gx-5"
         >
           <div
-            id="img2"
-            class="col-12 col-md-4"
+
+            class="col-12 col-md-4 video-card"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -91,8 +97,8 @@
           </div>
 
           <div
-            id="img3"
-            class="col-12 col-md-4"
+      
+            class="col-12 col-md-4 video-card"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -108,14 +114,14 @@
             </div>
           </div>
           <div
-            id="img4"
-            class="col-4 col-12 col-md-4"
+        
+            class="video-card col-4 col-12 col-md-4"
             data-aos="fade-right"
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
           >
-            <img class="" src="../assets/images/video9-2x.jpg" alt="" />
+            <img src="../assets/images/video9-2x.jpg" alt="" />
             <div class="play-button rounded-circle">
               <i class="fa-solid fa-play"></i>
             </div>
@@ -141,6 +147,7 @@ export default {
   width: 100%;
   height: 100%;
 }
+//Play Button
 .play-button {
   line-height: 60px;
   width: 60px;
@@ -154,6 +161,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+//Button
 .btn {
   margin-right: 30px;
   color: $primary-text;
@@ -163,6 +171,26 @@ export default {
     color: $primary-text;
   }
 }
+//Text Style
+h5 {
+  font-size: 1.5em;
+  color: $button-color;
+}
+h1 {  
+  color: black;
+  padding: 10px 0;
+  font-size: 4em;
+ 
+}
+h1:nth-child(1){
+  color: black;
+}
+
+p {
+  padding: 10px 0;
+  color: $text-grey;
+}
+//Section Style
 .row {
   row-gap: 40px;
   position: relative;
@@ -182,56 +210,31 @@ export default {
   width: 50px;
   height: 50px;
 }
-.phrase {
-  color: $primary-text;
-}
 
+//Cards
+.video-card {
+  height: 220px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
+  & > img {
+    border-radius: 0 0 25px 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
 #img1 {
   position: relative;
-  height: 500px;
+  height: 600px;
   background-size: cover;
   background-image: url("../assets/images/service15-2x.jpg");
-  // background-size: 100%;
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);
   border-radius: 0 0 25px 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
-   :hover{
-     filter: contrast(150%), brightness(110%)};
+  :hover {
+    filter: contrast(150%), brightness(110%);
+  }
 }
-#img2 {
-  height: 220px;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
-}
-#img2 > img {
-  border-radius: 0 0 25px 0;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-#img3 {
-  height: 220px;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
-}
-#img3 > img {
-  border-radius: 0 0 25px 0;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-#img4 {
-  height: 220px;
-  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.481));
-}
-#img4 > img {
-  border-radius: 0 0 25px 0;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
+
 </style>
