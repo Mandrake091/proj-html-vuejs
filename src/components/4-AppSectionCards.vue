@@ -227,6 +227,7 @@ p {
 #img1 {
   position: relative;
   height: 600px;
+  background-position: right;
   background-size: cover;
   background-image: url("../assets/images/service15-2x.jpg");
   box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.478);

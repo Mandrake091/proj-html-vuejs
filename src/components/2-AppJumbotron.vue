@@ -118,7 +118,7 @@ export default {
 
 .background {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   background-color: $bg-navbar;
   background-image: url(../assets/images/slider82x-scaled.jpg);
   background-size: cover;

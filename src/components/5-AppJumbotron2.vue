@@ -45,7 +45,7 @@ export default {
 
 .background {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   background-image: url(../assets/images/banner2-2x.jpg);
   background-size: cover;
   background-position: center center;
