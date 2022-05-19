@@ -132,7 +132,7 @@ export default {
 @import "../style/generals.scss";
 
 .background {
-  height: 70vh;
+  height: 80vh;
   background-image: url(../assets/images/banner1-2x.jpg);
   background-size: cover;
   background-position: top right;
@@ -203,7 +203,7 @@ h3 {
   color: $title-color;
 }
 h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 p {
   color: $text-grey;
